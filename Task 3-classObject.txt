@@ -1,0 +1,58 @@
+//Programs using Classes and Objects
+
+1.A Simple Class and Object:
+class Car {
+    String model;
+    int year;
+
+    public Car(String model, int year) {
+        this.model = model;
+        this.year = year;
+    }
+
+    public void displayDetails() {
+        System.out.println("Car Model: " + model);
+        System.out.println("Year: " + year);
+    }
+}
+
+public class CarExample {
+    public static void main(String[] args) {
+        Car car1 = new Car("Toyota ", 2020);
+        Car car2 = new Car("Honda ", 2022);
+
+        car1.displayDetails();
+        car2.displayDetails();
+    }
+}
+
+2.A Class with Multiple Objects and Different Data:
+class Student {
+    String name;
+    int age;
+    double grade;
+
+    public Student(String name, int age, double grade) {
+        this.name = name;
+        this.age = age;
+        this.grade = grade;
+    }
+
+    public void displayInfo() {
+        System.out.println("Name: " + name);
+        System.out.println("Age: " + age);
+        System.out.println("Grade: " + grade);
+    }
+}
+
+public class StudentExample {
+    public static void main(String[] args) {
+        Student student1 = new Student("Abi", 20, 85.5);
+        Student student2 = new Student("Vijay", 22, 90.2);
+        Student student3 = new Student("Raji", 21, 78.4);
+
+        student1.displayInfo();
+        student2.displayInfo();
+        student3.displayInfo();
+    }
+}
